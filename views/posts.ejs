@@ -1,6 +1,5 @@
 <%- include("partials/header2.ejs")%>
 
-
 <% let i = 0; %>
 <div id="list-container">
   <ul>
@@ -8,15 +7,20 @@
       <div>
         <li><%= post.postHour %>:<%= post.postMinutes %> - <%= post.content %></li>
         <div>
-          <button id="edit"><img src="/images/pen.svg"></button>
-          <img src="/images/trash.svg"
+          <!-- Edit: open a prompt on click, call /posts/:id/edit via fetch or form -->
+          <button class="edit-btn" data-id="<%= post.id %>">
+            <img src="/images/pen.svg" alt="Edit">
+          </button>
+          <!-- Delete: POST to /posts/:id/delete -->
+          <form method="POST" action="/posts/<%= post.id %>/delete" style="display:inline;">
+            <button type="submit" class="delete-btn">
+              <img src="/images/trash.svg" alt="Delete">
+            </button>
+          </form>
         </div>
       </div>
     <% i++;}); %>
   </ul>
 </div>
-
-
-
 
 <%- include("partials/footer.ejs")  %>
