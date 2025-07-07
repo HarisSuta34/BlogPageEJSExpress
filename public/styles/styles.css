@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+footer {
+  position: fixed;             /* or use static if you just want it below */
+  bottom: 0;
+  left: 0;
+  width: 100vw;                /* full viewport width without horizontal scroll */
+  background-color: rgb(86, 86, 236);
+  text-align: center;
+  padding: 1rem 0;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(86, 86, 236);
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  margin-right: 105px;
+}
+
+a{
+  text-align: center;
+  color: rgb(86, 86, 236);
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  font-size: 0.9rem;
+  background: rgb(86, 86, 236);
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  border: black solid 2px;
+  display: block;
+  margin: 10px auto;
+  width: 100px;
+}
+
+textarea::placeholder {
+  color: white;
+  text-align: center;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  resize: none;               /* disables manual resizing */
+  overflow-y: auto;           /* shows vertical scrollbar when needed */
+  white-space: pre-wrap;      /* wraps lines */
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  font-size: 0.9rem;
+  background: rgb(86, 86, 236);
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  border: black solid 2px;
+  display: block;
+  margin: 10px auto;   
+  text-align: center;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:175px;
+}
+
+li {
+  color: rgb(86, 86, 236);
+  list-style-type: none;
+  text-align: left;                  
+  max-width: 90vw;                      
+  width: 100%;
+  padding: 10px;
+  border: rgb(86, 86, 236) solid 2px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  word-wrap: break-word;                
+  overflow-wrap: break-word;            
+  box-sizing: border-box;    
+}
+
+ul{
+  max-width: 600px;
+}
+
+#all-posts{
+  margin-left: 70px;
+}
+
+#list-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin-bottom: 100px;
+  margin-top: 75px;
+}

@@ -1,0 +1,22 @@
+<%- include("partials/header2.ejs")%>
+
+
+<% let i = 0; %>
+<div id="list-container">
+  <ul>
+    <% postsList.forEach(function(post) { %>
+      <div>
+        <li><%= post.postHour %>:<%= post.postMinutes %> - <%= post.content %></li>
+        <div>
+          <button id="edit"><img src="/images/pen.svg"></button>
+          <img src="/images/trash.svg"
+        </div>
+      </div>
+    <% i++;}); %>
+  </ul>
+</div>
+
+
+
+
+<%- include("partials/footer.ejs")  %>
